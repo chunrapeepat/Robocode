@@ -1,4 +1,4 @@
-package HOLYSHIT;
+package NOOBZA;
 import robocode.*;
 import java.awt.Color;
 import robocode.util.Utils;
@@ -17,11 +17,11 @@ public class Chunza2542 extends AdvancedRobot
 
 	public void run() {
 	
-		setBodyColor(Color.black);
-		setGunColor(Color.black);
-		setRadarColor(Color.orange);
-		setBulletColor(Color.cyan);
-		setScanColor(Color.cyan);
+		setBodyColor(new Color(250,0,0));       // red
+		setGunColor(new Color(255,255,255));    // white
+		setRadarColor(new Color(20,51,255));    // blue
+		setBulletColor(new Color(255,255,255)); // white
+		setScanColor(new Color(250,0,0));       // red
 		
 		setAdjustGunForRobotTurn(true);
 		setAdjustRadarForRobotTurn(true);
