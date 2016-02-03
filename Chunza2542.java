@@ -1,4 +1,4 @@
-package NOOBZA;
+package YOYOYO;
 import robocode.*;
 import java.awt.Color;
 import robocode.util.Utils;
@@ -18,12 +18,6 @@ public class Chunza2542 extends AdvancedRobot
 	/* RUN METHOD */
 
 	public void run() {
-	
-		setBodyColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
-		setGunColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
-		setRadarColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
-		setBulletColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
-		setScanColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
 		
 		setAdjustGunForRobotTurn(true);
 		setAdjustRadarForRobotTurn(true);
@@ -34,6 +28,12 @@ public class Chunza2542 extends AdvancedRobot
 		this.movingForward = true;
 
 		while(true) {
+		
+			setBodyColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
+			setGunColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
+			setRadarColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
+			setBulletColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
+			setScanColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
 
 			if(getX() > 50 && getY() > 50 
 				&& getBattleFieldWidth() - getX() > 50
@@ -70,6 +70,12 @@ public class Chunza2542 extends AdvancedRobot
 	/* ScannedRobot METHOD */
 
 	public void onScannedRobot(ScannedRobotEvent e) {
+		
+			setBodyColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
+			setGunColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
+			setRadarColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
+			setBulletColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
+			setScanColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
 		
 		turnRight(e.getBearing() + 90);
 		
