@@ -2,6 +2,7 @@ package NOOBZA;
 import robocode.*;
 import java.awt.Color;
 import robocode.util.Utils;
+import java.util.*;
 
 /**
  * Chunza2542 - a robot by Chun Rapeepat
@@ -11,17 +12,18 @@ public class Chunza2542 extends AdvancedRobot
 {
 
 	boolean inWall;
-	boolean movingForward;	
+	boolean movingForward;
+	Random rand = new Random();
 	
 	/* RUN METHOD */
 
 	public void run() {
 	
-		setBodyColor(new Color(250,0,0));       // red
-		setGunColor(new Color(255,255,255));    // white
-		setRadarColor(new Color(20,51,255));    // blue
-		setBulletColor(new Color(255,255,255)); // white
-		setScanColor(new Color(250,0,0));       // red
+		setBodyColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
+		setGunColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
+		setRadarColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
+		setBulletColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
+		setScanColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
 		
 		setAdjustGunForRobotTurn(true);
 		setAdjustRadarForRobotTurn(true);
